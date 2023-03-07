@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    padding: 0;
+    margin: 0
+}
+
+:root {
+    --marvel-color: #ed1d24;
+}
+
+.font-sourceSans {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@font-face {
+    font-family: 'fuenteMarvel';
+    src: url('/src/fonts/TiltWarp-Regular.ttf');
+}
+
+.banner {
+    right: 0;
+    bottom: 0;
+    padding: 2em;
+    color: white;
+    position: absolute;
+    font-family: 'fuenteMarvel';
+    filter: drop-shadow(1px 8px 5px black);
+    -webkit-filter: drop-shadow(1px 8px 5px black);
+}
+
+div>nav>ul>li>button>b:hover {
+    color: var(--marvel-color);
+    animation: navBarItem 1s ease-in;
+    -webkit-animation: navBarItem 1s ease-in;
+}
+
+@keyframes navBarItem {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 100%;
+    }
+}

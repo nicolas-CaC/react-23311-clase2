@@ -1,15 +1,44 @@
-const navButtonHome = document.getElementById('navButtonHome')
-const navMenuHome = document.getElementById('navMenuHome')
-let navMenuOpen = false
+// Funciones auxiliares
 
-
-const showMenu = () => {
-    navMenuHome.hidden = false
-    navMenuOpen = true
+const show = (menu, stay = true) => {
+    menu.tag.hidden = false
+    // Operador ternario
+    stay
+        ? menu.onOver = true
+        : menu.isOpen = true
 }
 
-const hiddenMenu = () => {
-    setTimeout(() => {
-        navMenuHome.hidden = true
-    }, 500);
+const hide = (menu) => {
+    menu.tag.hidden = true
+    menu.isOpen = false
+}
+
+
+
+// Menu
+
+export const stayMenu = (menu) =>
+    menu.isOpen && show(menu)
+
+
+export const leaveMenu = (menu) => {
+    menu.onOver = false
+    setTimeout(() =>
+        menu.isOpen && hide(menu), 100);
+}
+
+
+
+// Buttons
+
+export const showMenu = (menu) =>
+    !menu.isOpen && show(menu, false)
+
+
+export const closeMenu = (menu) => {
+    setTimeout(() =>
+        // Cortocircuito
+        menu.isOpen
+        && !menu.onOver
+        && hide(menu), 100);
 }

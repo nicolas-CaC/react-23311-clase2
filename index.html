@@ -87,11 +87,12 @@
                         </div>
 
                     </li>
-                    <li class="relative" id="home">
-                        <button id="navButtonHome"
+
+                    <li class="relative" id="movies">
+                        <button id="navButtonMovies"
                             class="inline-flex items-center overflow-hidden rounded-md bg-zinc-900">
                             <b href="#" class="px-4 py-2 text-sm leading-none text-white">
-                                Inicio
+                                Peliculas
                             </b>
 
                             <div class="h-full p-2 text-gray-600 hover:bg-gray-50 hover:text-gray-700">
@@ -105,7 +106,7 @@
                             </div>
                         </button>
 
-                        <div id="navMenuHome" hidden
+                        <div id="navMenuMovies" hidden
                             class="absolute right-0 z-10 mt-2 w-56 divide-y divide-gray-100 rounded-md border border-gray-100 bg-white shadow-lg"
                             role="menu">
                             <div class="p-2">
@@ -152,6 +153,205 @@
                         </div>
 
                     </li>
+
+                    <li class="relative" id="series">
+                        <button id="navButtonSeries"
+                            class="inline-flex items-center overflow-hidden rounded-md bg-zinc-900">
+                            <b href="#" class="px-4 py-2 text-sm leading-none text-white">
+                                Series
+                            </b>
+
+                            <div class="h-full p-2 text-gray-600 hover:bg-gray-50 hover:text-gray-700">
+                                <span class="sr-only">Menu</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </button>
+
+                        <div id="navMenuSeries" hidden
+                            class="absolute right-0 z-10 mt-2 w-56 divide-y divide-gray-100 rounded-md border border-gray-100 bg-white shadow-lg"
+                            role="menu">
+                            <div class="p-2">
+                                <a href="#"
+                                    class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    role="menuitem">
+                                    View on Storefront
+                                </a>
+
+                                <a href="#"
+                                    class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    role="menuitem">
+                                    View Warehouse Info
+                                </a>
+
+                                <a href="#"
+                                    class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    role="menuitem">
+                                    Duplicate Product
+                                </a>
+
+                                <a href="#"
+                                    class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    role="menuitem">
+                                    Unpublish Product
+                                </a>
+                            </div>
+
+                            <div class="p-2">
+                                <form method="POST" action="#">
+                                    <button type="submit"
+                                        class="flex w-full items-center gap-2 rounded-lg px-4 py-2 text-sm text-red-700 hover:bg-red-50"
+                                        role="menuitem">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                        </svg>
+
+                                        Delete Product
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="relative" id="comics">
+                        <button id="navButtonComics"
+                            class="inline-flex items-center overflow-hidden rounded-md bg-zinc-900">
+                            <b href="#" class="px-4 py-2 text-sm leading-none text-white">
+                                Comics
+                            </b>
+
+                            <div class="h-full p-2 text-gray-600 hover:bg-gray-50 hover:text-gray-700">
+                                <span class="sr-only">Menu</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </button>
+
+                        <div id="navMenuComics" hidden
+                            class="absolute right-0 z-10 mt-2 w-56 divide-y divide-gray-100 rounded-md border border-gray-100 bg-white shadow-lg"
+                            role="menu">
+                            <div class="p-2">
+                                <a href="#"
+                                    class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    role="menuitem">
+                                    View on Storefront
+                                </a>
+
+                                <a href="#"
+                                    class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    role="menuitem">
+                                    View Warehouse Info
+                                </a>
+
+                                <a href="#"
+                                    class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    role="menuitem">
+                                    Duplicate Product
+                                </a>
+
+                                <a href="#"
+                                    class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    role="menuitem">
+                                    Unpublish Product
+                                </a>
+                            </div>
+
+                            <div class="p-2">
+                                <form method="POST" action="#">
+                                    <button type="submit"
+                                        class="flex w-full items-center gap-2 rounded-lg px-4 py-2 text-sm text-red-700 hover:bg-red-50"
+                                        role="menuitem">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                        </svg>
+
+                                        Delete Product
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </li>
+
+                    <li class="relative" id="contact">
+                        <button id="navButtonContact"
+                            class="inline-flex items-center overflow-hidden rounded-md bg-zinc-900">
+                            <b href="#" class="px-4 py-2 text-sm leading-none text-white">
+                                Contact
+                            </b>
+
+                            <div class="h-full p-2 text-gray-600 hover:bg-gray-50 hover:text-gray-700">
+                                <span class="sr-only">Menu</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20"
+                                    fill="currentColor">
+                                    <path fill-rule="evenodd"
+                                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
+                                        clip-rule="evenodd" />
+                                </svg>
+                            </div>
+                        </button>
+
+                        <div id="navMenuContact" hidden
+                            class="absolute right-0 z-10 mt-2 w-56 divide-y divide-gray-100 rounded-md border border-gray-100 bg-white shadow-lg"
+                            role="menu">
+                            <div class="p-2">
+                                <a href="#"
+                                    class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    role="menuitem">
+                                    View on Storefront
+                                </a>
+
+                                <a href="#"
+                                    class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    role="menuitem">
+                                    View Warehouse Info
+                                </a>
+
+                                <a href="#"
+                                    class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    role="menuitem">
+                                    Duplicate Product
+                                </a>
+
+                                <a href="#"
+                                    class="block rounded-lg px-4 py-2 text-sm text-gray-500 hover:bg-gray-50 hover:text-gray-700"
+                                    role="menuitem">
+                                    Unpublish Product
+                                </a>
+                            </div>
+
+                            <div class="p-2">
+                                <form method="POST" action="#">
+                                    <button type="submit"
+                                        class="flex w-full items-center gap-2 rounded-lg px-4 py-2 text-sm text-red-700 hover:bg-red-50"
+                                        role="menuitem">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none"
+                                            viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                            <path stroke-linecap="round" stroke-linejoin="round"
+                                                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                        </svg>
+
+                                        Delete Product
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </li>
+
 
 
 
@@ -330,7 +530,7 @@
 
     </main>
 
-    <footer aria-label="Site Footer" class="bg-white">
+    <footer aria-label="Site Footer" class="bg-zinc-900 text-white">
         <div class="mx-auto max-w-screen-xl px-4 pt-16 pb-6 sm:px-6 lg:px-8 lg:pt-24">
             <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
                 <div>
@@ -438,7 +638,7 @@
 
                 <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 lg:col-span-2">
                     <div class="text-center sm:text-left">
-                        <p class="text-lg font-medium text-gray-900">About Us</p>
+                        <p class="text-lg font-medium text-white">About Us</p>
 
                         <nav aria-label="Footer About Nav" class="mt-8">
                             <ul class="space-y-4 text-sm">
@@ -470,7 +670,7 @@
                     </div>
 
                     <div class="text-center sm:text-left">
-                        <p class="text-lg font-medium text-gray-900">Our Services</p>
+                        <p class="text-lg font-medium text-white">Our Services</p>
 
                         <nav aria-label="Footer Services Nav" class="mt-8">
                             <ul class="space-y-4 text-sm">
@@ -502,7 +702,7 @@
                     </div>
 
                     <div class="text-center sm:text-left">
-                        <p class="text-lg font-medium text-gray-900">Helpful Links</p>
+                        <p class="text-lg font-medium text-white">Helpful Links</p>
 
                         <nav aria-label="Footer Helpful Nav" class="mt-8">
                             <ul class="space-y-4 text-sm">
@@ -536,12 +736,12 @@
                     </div>
 
                     <div class="text-center sm:text-left">
-                        <p class="text-lg font-medium text-gray-900">Contact Us</p>
+                        <p class="text-lg font-medium text-white">Contact Us</p>
 
                         <ul class="mt-8 space-y-4 text-sm">
                             <li>
                                 <a class="flex items-center justify-center gap-1.5 sm:justify-start" href="/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-gray-900"
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-white"
                                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -553,7 +753,7 @@
 
                             <li>
                                 <a class="flex items-center justify-center gap-1.5 sm:justify-start" href="/">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-gray-900"
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-white"
                                         fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                         <path stroke-linecap="round" stroke-linejoin="round"
                                             d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
@@ -564,8 +764,8 @@
                             </li>
 
                             <li class="flex items-start justify-center gap-1.5 sm:justify-start">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-gray-900"
-                                    fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 shrink-0 text-white" fill="none"
+                                    viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                     <path stroke-linecap="round" stroke-linejoin="round"
                                         d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
                                     <path stroke-linecap="round" stroke-linejoin="round"
@@ -605,8 +805,9 @@
         </div>
     </footer>
 
-    <script src="/src/js/navBarButtonsFn.js"></script>
-    <script src="/src/js/navBarButtons.js"></script>
+    <script src="/src/js/navBarButtonsFn.js" type="module"></script>
+    <script src="/src/js/navBarButtons.js" type="module"></script>
+    <script src="/src/js/navBarButtonsEvents.js" type="module"></script>
 </body>
 
 </html>

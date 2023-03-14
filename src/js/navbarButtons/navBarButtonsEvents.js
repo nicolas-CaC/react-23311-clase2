@@ -8,5 +8,20 @@ const addEvents = (section) => {
     section.tag.addEventListener('mouseleave', () => leaveMenu(section))
 }
 
-sections.forEach(section => addEvents(section))
 
+const addLink = (section) =>
+    section.button.children[0].href = section.page
+
+
+
+export const navbarMenuEvents = () => {
+
+    const sectionsWithMenu = sections
+        .filter(section => section.subsections)
+
+    const sectionsWithoutMenu = sections
+        .filter(section => !section.subsections)
+
+    sectionsWithMenu.forEach(section => addEvents(section))
+    sectionsWithoutMenu.forEach(section => addLink(section))
+}

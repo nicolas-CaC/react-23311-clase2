@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
 
+@font-face {
+    font-family: 'fuenteMarvel';
+    src: url('/src/fonts/TiltWarp-Regular.ttf');
+}
+
 * {
     padding: 0;
     margin: 0
@@ -13,9 +18,13 @@
     font-family: 'Source Sans Pro', sans-serif;
 }
 
-@font-face {
+
+.font-marvel {
     font-family: 'fuenteMarvel';
-    src: url('/src/fonts/TiltWarp-Regular.ttf');
+}
+
+.text-shadow-white {
+    text-shadow: 0px 0px 4px white;
 }
 
 .banner {
@@ -29,7 +38,7 @@
     -webkit-filter: drop-shadow(1px 8px 5px black);
 }
 
-div>nav>ul>li>button>b:hover {
+div>nav>ul>li>button>a:hover {
     color: var(--marvel-color);
     animation: navBarItem 1s ease-in;
     -webkit-animation: navBarItem 1s ease-in;
@@ -43,4 +52,65 @@ div>nav>ul>li>button>b:hover {
     100% {
         opacity: 100%;
     }
+}
+
+header {
+    position: sticky;
+    z-index: 20;
+    top: 0;
+}
+
+@media screen and (max-width: 850px) {
+
+    .banner {
+        background: transparent !important;
+    }
+
+
+    .responsive {
+        flex-direction: column;
+        width: 100% !important;
+        z-index: 1;
+    }
+
+    .responsive-inlineblock {
+        display: inline-block !important;
+        justify-content: center !important;
+    }
+
+    .responsive-relative {
+        width: 100% !important;
+        position: relative !important;
+        justify-content: center !important;
+    }
+
+    /* Navbar */
+
+
+    .navbarMenu {
+        background-color: black !important;
+    }
+
+    .navbarMenu>ul>li {
+        width: 100%;
+    }
+
+    .navbarMenu>ul>li>button,
+    .navbarMenu>ul>li>button>a {
+        width: inherit
+    }
+
+    .navbarMenu>ul>li>div,
+    .navbarMenu>ul>li>div>div>form>button {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+
+
+
+    /* .responsive-navbar {
+        line-height: 0 !important;
+    } */
 }

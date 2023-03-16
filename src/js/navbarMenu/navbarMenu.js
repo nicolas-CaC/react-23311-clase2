@@ -8,7 +8,7 @@ const renderSections = (sections) => {
         sectionModel(section)).join('')
 
     const sectionsNode = document.createElement('ul')
-    sectionsNode.className = "mx-auto gap-5 flex items-center justify-between lg:px-8 font-sourceSans"
+    sectionsNode.className = "mx-auto gap-5 flex responsive items-center justify-between lg:px-8 font-sourceSans"
     sectionsNode.innerHTML = createSections
 
     navbarMenu.append(sectionsNode)

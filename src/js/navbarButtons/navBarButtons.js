@@ -12,7 +12,7 @@ export const sections = [
     },
     {
         name: 'Movies',
-        video: '/src/video/MarvelTheme.mp4',
+        video: '/src/video/MarvelMovies.mp4',
         button: 'navButtonMovies',
         tag: 'navMenuMovies',
         isOpen: false,
@@ -38,7 +38,7 @@ export const sections = [
     },
     {
         name: 'Series',
-        video: '/src/video/MarvelTheme.mp4',
+        video: '/src/video/MarvelSeries.mp4',
         button: 'navButtonSeries',
         tag: 'navMenuSeries',
         isOpen: false,
